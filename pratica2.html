@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<title>Example Title</title>
+ <style>
+        
+    
+        .estiloClase {
+        font-weight: bold;
+        text-decoration: underline;
+        color:red;
+        background-color:chartreuse;
+        cursor: wait;
+        
+        }
+        .estiloIdentificador {
+        font-weight: bold;
+        text-decoration: overline;
+        color:blue;
+        }
+        .especial {
+          background-color:yellow;
+        filter: blur(5px);
+        -webkit-filter: blur(5px);
+        }
+
+    </style>
+        
+	
+</head>
+ <body>  
+     <div id="cuadro" class="especial"
+         onmouseover="document.getElementById(´cuadro´).style=´background-color: yellow; filter: blur(0px);´;"
+         onmouseout="document.getElementById(´cuadro´).style=´background-color: yellow; filter: blur(0px);´;">
+     
+        
+        <p>Esto es <strong
+        id="estiloIdentificador">importante</strong> y tú lo sabes</p>
+  
+
+     <p>Esto es <span id="topico"
+         class="estiloClase">importante</span> y tu lo sabes</p>
+ 
+    </div>
+</body>
+
+</html>
